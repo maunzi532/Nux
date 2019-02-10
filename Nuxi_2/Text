@@ -1,0 +1,1592 @@
+001
+<statcreate>Leben<w>7<dieonzero>
+<t>He, Nuxi, wach auf (Ich bin Sterni)
+<option>241<t>Was ist los (gähn)
+<option>130<t>Wer ist Nuxi?
+
+130
+<t>Du bist Nuxi
+<option>241
+
+241
+<t>[Z] hat irgendeine große Maschine gebaut
+Diese Machine ist sehr böse und so
+Wir müssen [Z] aufhalten!
+Was sagst du dazu?
+<option>760<t>Aber es ist 3 Uhr...
+<option>289<t>Okay...
+
+760
+<t>Dann nimm halt den Wecker mit
+<itemget>Wecker<category>Elektrisch<category>Nicht Stein<category>Werfbar
+<option>289
+
+289
+<t>Der Berg wo [Z] diese Maschine gebaut hat ist direkt neben unserem Haus
+Schnell rauf, [Z] ist ganz oben soweit ich weiß
+Wir sollten keine Zeit verlieren, sonst ist es zu spät
+<statcreate>Zeit<w>5<dieonzero>
+<option>373
+
+373
+<t>Nach einem längeren Stück Weg kommen wir zu einer Abzweigung
+Wohin gehen wir?
+<option>177<t>Geradeaus, den breiten Weg
+<option>038<t>Links, den anderen Weg
+<option>416<t>Rechts, in den unteren Wald
+
+416
+<t>Ein kurzes Stück in den Wald und schon steht eine Art Mauer im Weg
+<option>079<t>Links vorbei, tiefer in den Wald
+<option>221<t>Rechts vorbei, zur Wüste
+
+221
+<t>Hier ist außer der Wüste nichts
+Gehen wir zurück zur Wand
+Das hat etwas Zeit gekostet
+<statchange>Zeit<w>-1
+<option>207<t>Zurück zur Abzweigung
+<option>079<t>An der Wand links vorbei
+
+079
+<t>Wir gehen um die Wand herum und erreichen einen Fluss
+Der Fluss fließt sehr langsam
+Wenn wir jetzt ein Floß hätten...
+<option>197<t>Bauen wir eines
+<option>207<t>Keine Zeit, gehen wir zurück
+
+207
+<t>Wir sind wieder bei der Kreuzung
+Welchen Weg nehmen wir jetzt?
+<option>177<t>Den breiten Weg
+<option>038<t>Den anderen Weg, gegenüber vom unteren Wald
+
+197
+<t>Um das Floß zu bauen, brauchen wir eine Weile
+<itemget>Floß<category>Nicht Stein
+<statchange>Zeit<w>-2
+<t>In welche Richtung fahren wir mit dem Floß?
+<option>019<t>Flussaufwärts
+<option>661<t>Flussabwärts
+
+019
+<t>Nach einem kleinen Stück Fahrt kommen Stromschnellen, da geht es nicht weiter
+Immerhin wissen wir jetzt aber, dass das Floß funktioniert
+<option>661<t>Versuchen wir es flussabwärts
+<option>207<t>Gehen wir zurück
+
+661
+<t>Hier kommt ein Wasserfall
+<option>399<t>Rudern
+<option>102<t>Abspringen
+<option>042<t>Festhalten
+
+399
+<t>Wir haben keine Ruder
+Mit den Händen rudern ist zu langsam
+Wir fallen runter
+<statchange>Leben<w>-5
+<option>042
+
+102
+<t>Wir haben es geschafft, vom Floß abzuspringen, aber das Floß fällt runter
+Auf dem Weg zurück finden wir allerdings einen tollen blauen Stein
+<itemremove>Floß
+<itemget>Blauer Stein<category>Stein
+<option>207
+
+042
+<t>Der Wasserfall war gar nicht so tief, nur ist hier unten die Strömung stärker
+Bis wir zurück an Land und zurück zur Abzweigung kommen, vergeht einige Zeit
+<statchange>Zeit<w>-1
+<option>207
+
+177
+<t>Hier kommt wieder eine Art Abzweigung
+Nach links führt ein kleiner Weg in den oberen Wald
+<option>266<t>In den Wald
+<option>152<t>Geradeaus weiter
+
+038
+<t>Hier kommt ein Querweg
+<option>455<t>Geradeaus weiter, zum Haupttunneleingang
+<option>477<t>Nach rechts, auf einem Weg durch den oberen Wald
+<option>291<t>Nach links, zum Getreidefeld
+
+291
+<t>He cool, so viel Getreide
+Wie wäre es, wenn wir etwas davon mitnehmen?
+Da unten ist ein Haus, das mir bekannt vorkommt
+<itemget>Getreide<category>Nicht Stein<category>Werfbar
+<option>006<t>Gehen wir wieder zurück
+<option>155<t>Gehen wir zum Haus
+<option>360<t>Gehen wir noch weiter durchs Getreide
+
+006
+<t>Wohin gehen wir jetzt
+<option>477<t>In den Waldweg
+<option>455<t>Den Weg zum Haupttunneleingang
+
+155
+<t>Moment mal, das ist doch unser Haus...
+Hast du etwa etwas vergessen?
+<ifitem>Wecker
+<option>186
+<else>
+<option>299
+
+186
+<t>Du hast den Wecker ja schon mit
+Gehen wir wieder zurück
+<statchange>Zeit<w>-1
+<option>006
+
+299
+<t>Okay, hier hast du den Wecker
+Jetzt gehen wir aber wieder zurück
+<statchange>Zeit<w>-1
+<itemget>Wecker<category>Elektrisch<category>Nicht Stein<category>Werfbar
+<option>006
+
+360
+<t>Da ist ein Getreideungeheuer
+Nichts wie weg, zurück zum Weg
+<option>382<giveitem>Getreide<t>Vielleicht können wir es mit dem Getreide füttern
+<option>383<t>Nicht füttern
+
+382
+<t>Das Getreideungeheuer frisst uns mitsamt dem Getreide
+Es spuckt uns wieder aus
+Ihh
+<giveget>
+<statchange>Leben<w>-4
+<option>006
+
+383
+<t>Das Getreideungeheuer frisst uns auf
+<minus7leben>
+
+266
+<t>Der Wald wird dichter und dichter
+Endlich taucht ein breiterer Querweg auf
+Der Weg von dem aus wir gekommen sind, ist von hier nicht mehr zu sehen
+<option>486<t>Nach links, leicht abwärts
+<option>477<t>Nach rechts, etwas steiler aufwärts
+
+152
+<t>Auf der Karte ist hier ein Erdrutsch eingezeichnet
+Warum zeichnet man so etwas auf einer Karte e...
+Aaahh!
+Ein Glück dass du mich festgehalten hast
+Anscheinend ist der langsam fließende Fluss hier unten für den Erdrutsch verantwortlich
+Wie kommen wir da vorbei?
+<option>500<t>Durch den Wald links vorbei
+<option>480<t>Über den weggebrochenen Abschnitt springen
+<option>590<t>Runterrutschen
+
+500
+<t>Der Wald ist hier sehr dicht zugewachsen
+Wir kommen trotzdem zum Weg zurück und gehen dann schnell weiter bis zum Haupttunneleingang
+<option>388
+
+590
+<t>Runterrutschen ist schwieriger als gedacht
+Braucht eine ganze Weile
+<statchange>Zeit<w>-1
+<option>517<t>Auf der anderen Seite wieder rauf
+<ifitem>Floß
+<option>460<t>Flussaufwärts fahren
+<option>407<t>Flussabwärts fahren
+
+486
+<t>Wir kommen aus dem Wald
+Auf der anderen Seite vom Weg ist viel Getreide
+<option>291<t>Ins Getreide
+<option>455<t>Den Weg entlang in Richtung Haupttunneleingang
+
+477
+<t>Wir gehen auf dem Waldweg und finden dort einen grünen Stein
+Wir kommen aus dem Wald und auf einen Weg der zum Haupttunneleingang führt
+<itemget>Grüner Stein<category>Stein
+<option>388
+
+455
+<t>Dieser Weg führt von links zum Haupttunneleingang
+<circget>Haupttunneleingang von links
+<option>388
+
+407
+<t>Auf dem Weg flussabwärts finden wir eine Höhle
+<option>511<t>Rein da
+<option>536<t>Weiter flussabwärts
+
+536
+<t>Da kommen Stromschnellen
+Halten wir uns gut am Floß fest
+Jetzt kommt da auch noch ein Wasserfall
+Nicht loslassen!
+<option>042
+
+511
+<t>Aha, das ist ein Tunnel
+Nur sieht man dort drin nichts
+Was könnte uns dabei helfen?
+Diese Taschenlampe hier vielleicht
+... ... ...
+Wer lässt denn in einem finsteren Tunnel Taschenlampen liegen?
+Wir steigen vom Floß ab und nehmen uns die Taschenlampe
+Damit sehen wir uns hier mal um
+Hmm der Stein da oben sieht recht wackelig aus
+Er fällt runter!
+AAAHH!
+Der Stein hat uns nicht getroffen, aber er liegt jetzt vor einem Eingang zu einem Gang oben
+Gegenüber davon ist auch ein Gang
+Da kommt ein Tunnelungeheuer
+Schnell in den Gang oben wo der Stein liegt
+<itemget>Taschenlampe<category>Elektrisch<category>Nicht Stein<category>Werfbar
+<t>(Du darfst dir aussuchen, wo der Stein liegt, es ist relativ egal)
+<option>109<t>Stein liegt links
+<option>070<t>Stein liegt rechts
+
+109
+<t>Wir rennen durch den Gang
+Der Gang wird langsam enger
+Ist das Tunnelungeheuer hinter uns her? Was meinst du?
+<option>506<t>Ja
+<option>508<t>Nein
+
+070
+<t>Wir rennen durch den Gang
+Der ist sehr lang, ich brauche eine Pause
+Ist das Tunnelungeheuer hinter uns her? Was meinst du?
+<option>441<t>Ja
+<option>406<t>Nein
+
+506
+<t>Dann sollten wir weiterrennen
+Aber da ist der Gang zu eng
+Wir stoßen gegen die Decke
+Das Tunnelungeheuer wollte anscheinend nicht in diesen engen Gang
+<minus7leben>
+
+406
+<t>Okay gut, dann bleiben wir stehen
+Mal sehen
+Auf einmal kommt das Tunnelungeheuer um die Kurve und stößt mit uns zusammen!
+<minus7leben>
+
+508
+<t>Wir bleiben stehen und schauen zurück
+Es ist nicht hier
+Gehen wir wieder zurück, hier geht es anscheinend nicht weiter
+Da unten ist es
+Es schaut gerade nicht nach oben, also können wir zum anderen Gang rüberklettern
+Dort gehen wir weiter und finden einen Ausgang
+<option>388
+
+441
+<t>Wir rennen weiter, obwohl der Gang so lang ist
+Da vorne ist ein Licht
+Wir kommen aus dem Tunnel
+Das Tunnelungeheuer bleibt im Tunnel
+<option>388
+
+517
+<t>Das sieht schwierig aus...
+Aber nicht mit diesem Seil, das hier herumliegt
+Wirf mich und das Seil rauf, dann zieh ich dich hoch
+Irgendwie seltsam, dass hier ein Seil einfach so herumliegt
+Jetzt können wir weiter zum Haupttunneleingang
+<itemget>Seil<category>Nicht Stein<category>Klettern<category>Werfbar
+<option>388
+
+460
+<t>Wir fahren flussaufwärts
+Der Fluss wird relativ eng, wir können mit dem Floß nicht mehr weiter
+Hier links geht es zum Weg zum Haupttunneleingang
+<option>388<t>Gehen wir zum Weg
+<option>804<t>Gehen wir weiter den Fluss entlang
+
+804
+<t>Der Fluss endet hier
+Wir finden eine Tür
+Die Tür geht nicht auf, anscheinend ist sie elektronisch verriegelt
+Gehen wir zurück zum Weg
+<circget>Verriegelte Tür gesehen
+<option>388
+
+388
+<t>Hierherzukommen hat einiges an Zeit gebraucht, aber wir sind jetzt am Haupttunneleingang
+Der Tunnel ist von einem TQL bewacht
+Über dem Haupttunneleingang befinden sich weitere TQLs
+Die bewachen anscheinend gerade nicht und spielen Reversi
+[Z] hat sicher den TQLs gesagt, dass sie uns aufhalten sollen
+Wir müssen da irgendwie vorbei
+<statchange>Zeit<w>-1
+<ifcirc>Haupttunneleingang von links
+<option>933<t>Wir könnten links am TQL vorbeischleichen und den Weg links am Tunnel vorbei nehmen
+<else>
+<t>Auch um den Weg links am Tunnel vorbei zu nehmen, müssen wir an dem TQL vorbei
+<end>
+<endcreate>
+<t>Wir können versuchen, den TQL mit etwas zu bewerfen
+<option>222<giveitem>Stein<t>Mit einem farbigen Stein
+<option>646<giveitem>Wecker<t>Mit einem Wecker
+<option>728<giveitem>Seil<t>Mit einem Seil
+<option>108<giveitem>Taschenlampe<t>Mit einer Taschenlampe
+<option>021<giveitem>Getreide<t>Mit Getreide
+<option>449<giveitem>Floß<t>Mit einem Floß
+<option>802<t>Mit mir (Sterni)
+
+389
+<giveget>
+<t>Mit was könnten wir noch werfen?
+<option>222<giveitem>Stein<t>Mit einem farbigen Stein
+<option>646<giveitem>Wecker<t>Mit einem Wecker
+<ifcirc>Seil versucht<else>
+<option>728<giveitem>Seil<t>Mit einem Seil
+<end>
+<option>108<giveitem>Taschenlampe<t>Mit einer Taschenlampe
+<ifcirc>Getreide versucht<else>
+<option>021<giveitem>Getreide<t>Mit Getreide
+<end>
+<ifcirc>Floß versucht<else>
+<option>449<giveitem>Floß<t>Mit einem Floß
+<end>
+<option>802<t>Mit mir (Sterni)
+<ifcirc>Haupttunneleingang von links
+<option>933<t>Wir könnten immer noch links am TQL vorbeischleichen um den Weg links am Tunnel vorbei zu nehmen
+
+222
+<t>Volltreffer
+Die anderen TQLs bemerken es erst relativ spät, aber sie verfolgen uns jetzt
+Schnell weg
+<giveget>
+<statcreate>Abstand<w>5<dieonzero>
+<option>901<t>In den Tunnel
+<option>342<t>Links am Tunnel vorbei
+
+646
+<t>Volltreffer
+Der Wecker klingelt allerdings
+Die anderen TQLs bemerken es schnell, aber sind etwas verwirrt
+Jetzt verfolgen sie uns
+Schnell weg
+<giveget>
+<statcreate>Abstand<w>3<dieonzero>
+<option>901<t>In den Tunnel
+<option>342<t>Links am Tunnel vorbei
+
+728
+<t>Willst du damit den TQL cowboymäßig fangen?
+<circget>Seil versucht
+<option>762<t>Ja
+<option>389<t>Nein
+
+108
+<t>Treffer
+Die Taschenlampe war wohl etwas zu leicht
+Die TQLs verfolgen uns jetzt alle
+Schnell weg
+<giveget>
+<statcreate>Abstand<w>2<dieonzero>
+<option>901<t>In den Tunnel
+<option>342<t>Links am Tunnel vorbei
+
+021
+<t>Willst du etwa mit dem Getreide den TQL ködern?
+<circget>Getreide versucht
+<option>594<t>Ja
+<option>389<t>Nein
+
+449
+<t>Das Floß ist zu schwer, wir können es nicht werfen
+<giveget>
+<circget>Floß versucht
+<option>389
+
+802
+<t>Volltreffer
+Allerdings musst du auf mich warten, bis dahin haben es die anderen TQLs alle bemerkt
+Jetzt verfolgen sie uns
+Schnell weg
+<statcreate>Abstand<w>1<dieonzero>
+<option>901<t>In den Tunnel
+<option>342<t>Links am Tunnel vorbei
+
+762
+<t>So, wir haben den TQL gefangen...
+Die TQLs schauen alle verwirrt auf das Seil
+Schnell weg, bevor sie uns bemerken
+Zu spät, sie verfolgen uns jetzt
+<giveclear>
+<statcreate>Abstand<w>7<dieonzero>
+<option>901<t>In den Tunnel
+<option>342<t>Links am Tunnel vorbei
+
+594
+<t>Der TQL schaut verwirrt das Getreide an
+Schnell vorbei
+Da kommt von links ein Getreideungeheuer
+Schnell zurück
+Der TQL erwischt uns
+Das Getreideungeheuer auch
+<minus7leben>
+
+933
+<t>Wir schleichen am TQL vorbei
+Auf einmal kommt von links ein hungriges Getreideungeheuer
+<option>681<giveitem>Getreide<t>Mit Getreide füttern
+<option>383<t>Kein Futter
+
+681
+<t>Wir füttern das Getreideungeheuer mit dem Getreide
+Die TQLs hören es
+Schnell weg
+Das Getreideungeheuer freut sich
+<giveclear>
+<circget>Getreideungeheuer gefüttert
+<statcreate>Abstand<w>7<dieonzero>
+<option>342
+
+901
+<t>Wir rennen in den Tunnel
+Hier kommt eine Abzweigung
+<option>063<t>Der linke Gang ist recht eng aber etwas besser beleuchtet
+<option>464<t>Der rechte Gang ist breiter
+
+342
+<t>Wir rennen auf den Weg links vom Haupttunneleingang
+Da ist ein Getreideungeheuer im Weg
+<ifcirc>Getreideungeheuer gefüttert
+<t>Es ist jenes, das wir bereits gefüttert haben
+<option>948<t>Zum Getreideungeheuer
+<else>
+<option>716<t>Zum Getreideungeheuer
+<end>
+<option>319<t>Daran vorbei, am Abgrund entlang
+
+464
+<t>Vor uns kommt ein breiter, tiefergelegener Tunnel
+Etwas weiter links führt über diesen Tunnel eine Brücke
+Nach rechts sieht der Tunnel zunehmend wie in einem Haus aus
+Gegenüber ist ein Weg mit einer Linkskurve und einer Tür in der Kurve
+<option>873<t>Im tieferen Tunnel nach links, in Richtung Brücke
+<option>810<t>Im tieferen Tunnel nach rechts
+<option>669<t>Auf die andere Seite springen
+
+716
+<t>Das Getreideungeheuer ist hungrig und will etwas fressen
+<option>282<giveitem>Getreide<t>Mit Getreide füttern
+<option>383<t>Kein Futter
+
+063
+<t>Dieser Weg ist recht schwierig zu begehen
+Die TQLs haben allerdings kein Problem damit
+Hier ist eine Kreuzung
+<statchange>Abstand<w>-2
+<option>868<t>Von links kommt Licht rein, das anscheinend auch diesen Gang beleuchtet hat
+<option>293<t>Rechts kommt eine Brücke
+<option>625<t>Geradeaus geht es steil aufwärts, dann biegt sich der Weg nach rechts
+
+319
+<t>Das ist recht riskant
+<option>830<t>Wir sollten langsamer gehen
+Das reduziert dann allerdings den Abstand zu den TQLs
+<option>540<t>Wir könnten bei dem Abgrund ein Stück runterrutschen
+Dadurch hängen wir vielleicht die TQLs ab
+Allerdings weiß ich nicht, wie wir dann wieder raufkommen
+
+810
+<t>Dieser Gang sieht immer mehr nach Haus aus
+Ah, das sind Häuser...
+Allerdings endet der Gang hier in ein paar Haustüren
+Verstecken wir uns in einer und rennen dann zurück
+Das verbraucht einiges an Vorsprung...
+<statchange>Abstand<w>-3
+<option>873
+
+669
+<t>Wir springen über den Tunnel
+Die TQLs können nicht so weit springen, aber sie nehmen eine herumstehende Leiter und klettern damit rauf
+<statchange>Abstand<w>2
+<option>694<t>Weiter den Weg entlang um die Linkskurve
+<option>268<t>Zur Tür
+
+948
+<t>Das Getreideungeheuer lässt uns vorbei
+<option>095
+
+282
+<t>Wir füttern das Getreideungeheuer mit dem Getreide
+Es lässt uns vorbei
+<giveclear>
+<option>095
+
+830
+<t>Wir gehen außen um das Getreideungeheuer herum
+Die TQLs gehen direkt vorbei, ihr Abstand zu uns verringert sich
+<statchange>Abstand<w>-2
+<option>095
+
+268
+<t>Die Tür ist elektronisch verriegelt
+<ifcirc>Verriegelte Tür gesehen
+<option>947
+<else>
+<option>750
+
+868
+<t>Wir rennen durch den Tunnel in Richtung Licht
+Da ist viel Licht man sieht fast gar nichts
+Dieses Tunnelungeheuer hier haben wir anscheinend auch nicht gesehen
+Wir stoßen mit dem Tunnelungeheuer zusammen
+Es fällt auf einen Weg, der anscheinend der Weg links vom Haupttunneleingang ist
+Hier steht eine Laterne, von der das viele Licht kommt
+Die TQLs sind immer noch hinter uns her, daher springen wir auch runter
+Wir sind jetzt draußen
+Die TQLs springen uns hinterher
+<option>2a0
+
+095
+<t>Hier vorne ist eine Laterne die ziemlich hell leuchtet
+Auf einmal springt ein Schatten von irgendwo runter und landet vor uns
+Der Schatten gehört zu einem Tunnelungeheuer
+<option>2a0
+
+873
+<t>Dieser Tunnel scheint recht oft genutzt zu werden
+Da vorne ist eine Brücke die über diesen Tunnel führt
+Wir laufen unten durch
+<option>129
+
+293
+<t>Die Brücke führt über einen breiten tiefergelegenen Tunnel
+Auf der anderen Seite der Brücke befindet sich eine weitere Kreuzung
+Der tiefergelegene Tunnel führt nach links vermutlich zu einem Ausgang
+Nach rechts sieht der Tunnel zunehmend wie in einem Haus aus
+<option>192<t>Über die Brücke
+<option>129<t>Runterspringen und nach links
+<option>810<t>Runterspringen und nach rechts
+
+192
+<t>Jetzt sind wir bei der zweiten Kreuzung
+<option>051<t>Der Weg geradeaus führt abwärts und sieht relativ lang aus
+<option>579<t>Links geht es steil aufwärts, dann biegt sich der Weg weiter nach links
+<option>138<t>Rechts kann man eine Tür sehen, dann biegt sich der Weg weiter nach rechts
+
+138
+<t>Hier ist die Tür
+Nach der Kurve kommt ein breiter tiefergelegener Tunnel
+In dem Tunnel steht eine Leiter
+<option>215<t>Die Leiter holen
+<option>268<t>Zur Tür
+
+215
+<t>Wir springen runter in den Tunnel und holen uns die Leiter
+Von links kommen gerade TQLs, daher laufen wir nach rechts
+<itemget>Leiter<category>Nicht Stein<category>Klettern
+<option>873
+
+625
+<t>Hier geht es steil aufwärts, wir kommen nur langsam voran
+Da oben finden wir einen tollen schwarzen Stein
+Dann kommt eine Rechtskurve und es geht wieder steil runter
+Wir kommen zu einer weiteren Kreuzung
+Rechts ist eine Brücke
+Die Brücke führt über einen Tunnel und wird jetzt von einem TQL bewacht
+<statchange>Abstand<w>-2
+<itemget>Schwarzer Stein<category>Stein
+<option>810<t>In den Tunnel runterspringen und dann nach links, dort sieht der Tunnel zunehmend wie in einem Haus aus
+<option>129<t>In den Tunnel runterspringen und dann nach rechts, das führt vermutlich zu einem Ausgang
+<option>051<t>Der Weg links führt abwärts und sieht relativ lang aus
+<option>138<t>Geradeaus kann man eine Tür sehen, dann biegt sich der Weg weiter nach rechts
+
+579
+<t>Hier geht es steil aufwärts, wir kommen nur langsam voran
+Da oben finden wir einen tollen schwarzen Stein
+Dann kommt eine Linkskurve und es geht wieder steil runter
+Wir kommen zu einer weiteren Kreuzung
+Links ist eine Brücke
+Die Brücke führt über einen Tunnel und wird jetzt von einem TQL bewacht
+Der Weg geradeaus sieht auch relativ bewacht aus
+<statchange>Abstand<w>-3
+<itemget>Schwarzer Stein<category>Stein
+<option>810<t>In den Tunnel runterspringen und dann nach rechts, dort sieht der Tunnel zunehmend wie in einem Haus aus
+<option>129<t>In den Tunnel runterspringen und dann nach links, das führt vermutlich zu einem Ausgang
+<option>868<t>Von dem Gang rechts kommt Licht rein
+
+540
+<t>Wir rutschen ab und rutschen bis zu einem Loch in der Wand
+Die TQLs folgen uns jetzt nicht mehr
+In diesem Loch befinden sich ein Tunnel und ein toller violetter Stein
+Im Tunnel leuchtet ein "Notausgang" Zeichen
+<statremove>Abstand
+<itemget>Violetter Stein<category>Stein
+<option>575<t>Gehen wir in den Tunnel
+<ifitem>Seil
+<option>023<t>Klettern wir wieder rauf (Mit Seil)
+<else>
+<option>480<t>Klettern wir wieder rauf
+<end>
+<ifitem>Floß
+<option>484<t>Fahren wir auf dem Floß weiter runter
+
+694
+<t>Wir kommen zu einer Kreuzung
+Links ist eine Brücke die über den Tunnel von vorhin führt
+<option>896<t>Über die Brücke
+<option>810<t>In den Tunnel runterspringen und dann nach links, dort sieht der Tunnel zunehmend wie in einem Haus aus
+<option>129<t>In den Tunnel runterspringen und dann nach rechts, das führt vermutlich zu einem Ausgang
+<option>051<t>Der Weg rechts führt abwärts und sieht relativ lang aus
+<option>579<t>Geradeaus geht es steil aufwärts, dann biegt sich der Weg nach links
+
+896
+<t>Wir gehen über die Brücke und kommen zu noch einer Kreuzung
+Der Weg nach links sieht relativ bewacht aus
+<option>868<t>Geradeaus kommt Licht rein
+<option>625<t>Nach rechts geht es steil rauf, dann biegt sich der Weg weiter nach rechts
+
+2a0
+<t>Das Tunnelungeheuer setzt zu einem Sprung an
+Ich glaube, es will uns loswerden
+Was tun?
+<option>313<t>Das Tunnelungeheuer angreifen
+<option>726<t>Am Tunnelungeheuer schnell vorbeigehen
+<option>1a6<t>Dem Sprung ausweichen
+
+1a6
+<t>Das Tunnelungeheuer springt auf uns zu und landet knapp neben uns
+Wir weichen aus... und rutschen ab!
+<statchange>Leben<w>-2
+<option>540
+
+313
+<t>Hmmm... Du meinst "HOYAAH" schreien und das Tunnelungeheuer über den Haufen rennen?
+<option>978<t>Ja
+<option>643<t>Nein
+
+978
+<t>HOYAAH
+Wir rennen mitten in das Tunnelungeheuer rein
+Ich glaube wir sind jetzt in seinem Magen
+<minus7leben>
+
+643
+<t>Diskutieren kostet Zeit
+Wir brauchen eine andere Strategie
+<statchange>Abstand<w>-1
+<t>Das Tunnelungeheuer springt auf uns zu und landet knapp neben uns
+Schnell weg, zum Haupttunnelausgang
+<option>912
+
+750
+<t>Die Tür ist zu, da hilft auch kein Rütteln
+Wahrscheinlich weil sie elektronisch verriegelt ist...
+Hier ist ein Klingelknopf
+Drücken wir den und warten ob wer aufmacht
+<statchange>Abstand<w>-4
+<option>769
+
+947
+<t>Diese Tür sieht genauso aus wie die, die wir schon einmal gesehen haben
+Bis auf diesen Klingelknopf hier
+Drücken wir ihn schnell
+<option>769
+
+726
+<t>Wir gehen schnell am Tunnelungeheuer vorbei
+Es schaut uns dauernd so seltsam an...
+Wir sollten langsamer vorbeigehen, vielleicht hört es dann damit auf
+<statchange>Abstand<w>-2
+<t>Wir laufen weiter bis zum Haupttunnelausgang
+<option>912
+
+129
+<t>Wir laufen durch den Tunnel um eine Linkskurve und erreichen den Haupttunnelausgang
+<option>912
+
+051
+<t>Hier geht es runter
+Und zwar spiralförmig
+Nach einiger Zeit erreichen wir einen Raum
+Die TQLs sind uns hierher nicht gefolgt
+<statremove>Abstand
+<statchange>Zeit<w>-1
+<option>248
+
+575
+<t>Dieser Tunnel ist ziemlich lang
+Nach einiger Zeit erreichen wir einen Raum
+<statchange>Zeit<w>-1
+<option>248
+
+480
+<t>Ojeh da fallen wir runter
+<minus7leben>
+
+023
+<t>Wir klettern mit dem Seil wieder rauf und halten uns dabei links
+Ziemlich bald erreichen wir den Haupttunnelausgang
+<option>912
+
+769
+<statremove>Abstand
+<t>"Ah, ihr seid es
+Kommt rein"
+Wir gehen rein
+Wer bist du?
+"Ich Bin [A]
+Durch diesen Ausgang könnt ihr die TQLs umgehen
+Das ist der Hinterausgang"
+<ifcirc>Verriegelte Tür gesehen
+<t>Das ist die Tür die wir schon mal versucht haben aufzumachen
+<end>
+<circget>[A] gesehen
+<t>Ah, danke
+"Habt ihr vielleicht ein Floß oder so dabei?"
+<ifitem>Floß
+<option>688<t>Zufälligerweise ja...
+<else>
+<option>347
+
+347
+<t>"Hmm... Dann sollte dieser Weg euch zum Haupttunnelausgang führen"
+[A] erklärt uns den Weg
+"Wir sehen uns"
+Wir gehen los
+<statchange>Zeit<w>-1
+<option>912
+
+484
+<t>WAAAS?
+Na gut, wenn du meinst
+Wir rutschen runter
+Pass auf, das Getreidefeld!
+Nach rechts!
+Jetzt sind wir auf der Seite vom Berg, von der wir keine Karte haben
+<option>756
+
+688
+<t>"Das ist gut, dann könnt ihr den schnellen Weg nehmen
+Setzt euch einfach drauf und fahrt hier runter
+Wir sehen uns"
+Sicher?
+Naja ok dann mal los
+Wir rutschen auf dem Floß die Böschung runter und am Haupttunneleingang vorbei
+Dann rutschen wir am Getreidefeld rechts vorbei
+Jetzt sind wir auf der Seite vom Berg, von der wir keine Karte haben
+<option>756
+
+756
+<t>Hier wird es flacher und wir steigen vom Floß ab
+Da ist eine Tür wo "Lift zum Haupttunnelausgang" draufsteht
+Gehen wir rein
+Der Lift bringt uns zum Haupttunnelausgang
+Von hier ist der Lift ziemlich gut getarnt und man kann ihn kaum erkennen
+<option>912
+
+912
+<t>Der Haupttunnelausgang...
+Dann ist es ja nicht mehr weit
+Verfolgen uns die TQLs noch?
+<ifstat>Abstand<w>1
+<option>092
+<else>
+<option>721
+
+248
+<t>Dieser Raum muss ziemlich tief im Berg sein
+Hier drin sind ein RQK und ein Lift
+<option>143<t>Mit dem RQK reden
+<option>423<t>Zum Lift gehen
+
+092
+<t>Ich habe eine Idee, wie wir die TQLs abhängen können
+Dazu brauchen wir aber eine Leiter
+<ifitem>Leiter
+<option>124
+<else>
+<option>934
+
+721
+<t>Na dann haben wir es ja nicht mehr so eilig
+Hier vorne ist ein Hügel
+Welchen Weg nehmen wir?
+<option>151<t>Außenherum, links am Hügel vorbei
+<option>984<t>Rechts am Hügel vorbei, ein recht vielgenutzt aussehender Weg
+
+934
+<t>Die TQLs verfolgen uns jetzt schon eine ganze Weile
+Wir sollten uns schnell vor ihnen verstecken
+Vielleicht hören sie dann auf, uns zu verfolgen
+Hier ist ein gutes Versteck, aber es braucht Zeit hier reinzukriechen
+<statchange>Abstand<w>-2
+<t>Wir haben es geschafft
+Die TQLs gehen wieder weg
+<statremove>Abstand
+<option>721
+
+124
+<t>Wir klettern mit der Leiter auf den Hügel vor uns
+Die TQLs kommen nicht rauf und gehen weg
+Welchen Weg nehmen wir jetzt?
+<statremove>Abstand
+<option>151<t>Außenherum, links am Hügel vorbei
+<option>984<t>Rechts am Hügel vorbei, ein recht vielgenutzt aussehender Weg
+<option>320<t>Weiter rauf
+
+151
+<t>Der Weg wird immer weniger erkennbar
+Wo ist der Weg?
+Anscheinend weg
+Hier ist ein recht steiler Hang
+Wenn wir nicht abstürzen wollen, müssen wir langsamer gehen
+<option>632<t>Sehr langsam und vorsichtig entlang
+<option>472<t>Schnell entlang
+<option>320<t>Den Hang raufklettern
+<option>998<t>Runterspringen
+
+984
+<t>Dieser Weg scheint recht oft benutzt zu sein
+Deshalb wird er wohl bewacht
+Da vorne sind TQLs, die den Weg bewachen
+Rechts von uns sind RQKs, die neben einer Maschine herumsitzen
+<option>658<t>Gehen wir zu den TQLs die den Weg bewachen
+<option>359<t>Gehen wir zu den RQKs
+<option>320<t>Klettern wir auf den Hügel, da kommen wir vielleicht an den TQLs vorbei
+
+320
+<t>Hier geht es recht steil rauf
+Jetzt steht vor uns ein Stück von einer alten Burgmauer herum
+Daran kommt man nur schlecht vorbei
+Vielleicht könnten wir drüberklettern?
+Mit einer Leiter oder einem Seil sollte das gehen
+<ifitem>Klettern
+<option>213<t>Drüberklettern
+<end>
+<option>083<giveitem>Stein<t>Die Mauer mit einem farbigen Stein hauen
+<option>171<t>Außen herum gehen
+
+632
+<t>Wir schaffen es, am Hang entlangzugehen ohne runterzufallen
+Allerdings hat das Zeit gekostet
+<statchange>Zeit<w>-1
+<option>418
+
+472
+<t>Wir sind ein Stück runtergefallen
+Aua
+Klettern wir schnell zurück rauf
+<statchange>Leben<w>-6
+<option>418
+
+998
+<t>Wir landen unten und erhalten 7 Fallschaden
+<minus7leben>
+
+171
+<t>Da gehts steil abwärts
+Jetzt sind wir ein Stück runtergefallen
+Aua
+<statchange>Leben<w>-2
+<t>Hier ist ein recht steiler Hang
+Ich hoffe wir stürzen nicht schon wieder ab
+<option>632<t>Sehr langsam und vorsichtig entlang
+<option>472<t>Schnell entlang
+<option>998<t>Runterspringen
+
+213
+<t>Wir kommen ohne Probleme über die Mauer
+Ein Stück weiter wird es dann wieder eben
+<option>418
+
+083
+<t>Die Mauer hauen?
+Wozu soll das denn gut sein?
+Warum stecken wir den Stein nicht einfach in das Loch hier?
+Da steht: "HIR STAIN RAINN"
+<option>285<t>Den "Stain rainnstecken"
+<option>544<t>Trotzdem die Mauer hauen
+
+285
+<t>Wir stecken den Stein rein
+Auf einmal bricht die Mauer zusammen
+Allerdings ist unser Stein irgendwie verschwunden
+Gehen wir weiter
+<giveclear>
+<option>418
+
+544
+<t>Die Mauer gibt nicht nach
+Versuchen wir es noch einmal fester
+Okay, jetzt ist sie zusammengefallen
+Unsere Items auch...
+Mal sehen...
+Leider haben wir nur unsere bunten Steine wiedergefunden
+Gehen wir weiter
+<giveget>
+<itemremove>Nicht Stein
+<option>418
+
+359
+<t>Die beiden RQKs sehen recht verärgert aus
+"Wir haben so eine Art Stromgenerator gebaut"
+"Aber wir haben vergessen, irgendetwas zum Testen mitzunehmen"
+"Habt ihr vielleicht etwas?"
+<option>254<giveitem>Elektrisch
+<t>Wir könnten ihnen ein elektrisches Gerät geben
+Damit könnten sie ihre Maschine vielleicht testen
+<option>834<t>Andernfalls
+
+658
+<t>Wie wollen wir an den TQLs vorbei?
+<option>250<t>Vorbeischleichen
+<option>915<t>Fragen, ob sie uns vorbeilassen
+
+143
+<t>Wir fragen den RQK was er hier macht
+"Hier hinten ist eine kleine Mine für farbige Steine
+Die funktioniert normalerweise vollautomatisch, aber zurzeit ist sie kaputt
+Ich warte auf eine Lieferung von Ersatzteilen"
+Die Mine ist recht klein, da ist nichts zu finden
+Nicht mal farbige Steine
+"Ich höre TQLs von oben kommen
+Ihr solltet per Lift wegfahren"
+<option>791<giveitem>Stein<t>Wir könnten den RQK fragen, was diese Dinger sind
+<option>423<t>Zum Lift
+
+791
+<giveget>
+<t>"Die werden von der 'Maschine 2' im 2.UG verwendet
+Die 'Maschine 2' schwächt Maschinen von [Z]
+Sie ist gerade nicht in Betrieb, weil die Steinversorgung aus ist
+Mit 4 Steinen sollte sie wieder für eine Weile in Betrieb gehen
+Hier ist der Schlüssel
+Mal sehen ob ihr sie wieder starten könnt"
+Okay, mal sehen
+Auf zum Lift
+<itemget>Schlüssel<category>Nicht Stein<category>Werfbar
+<option>423
+
+834
+<t>"Ach, schade"
+Die RQKs gehen ein Testgerät holen
+Sie haben irgendetwas orangefarbenes mit
+Wir haben allerdings keine Zeit um sie danach zu fragen
+Wir müssen ja auf den Berg rauf
+<option>658<t>Gehen wir zu den TQLs
+<option>320<t>Klettern wir auf den Hügel
+
+254
+<t>Wir geben ihnen das Gerät
+Die RQKs schließen es an ihren Stromgenerator an und...
+Es schmilzt
+<giveclear>
+<t>"Ohje, diese Einstellung hier hatten wir viel zu hoch eingestellt
+Wenn wir die umstellen, sollte es gehen"
+"Dann müssten wir es aber nochmal testen"
+Ähh...
+"Ihr wollt an den TQLs vorbei, oder?
+Da können wir euch helfen"
+<option>252<t>An den TQLs vorbei
+<option>153<giveitem>Elektrisch<t>Vorher noch testen, ob der Generator jetzt vielleicht funktioniert
+
+418
+<t>Wir erreichen einen breiten Weg oberhalb vom Hügel
+Der Weg führt nach rechts zu einem anderen Weg
+Der wird von TQLs bewacht, aber nur unten
+Wir wollen aber nach oben, also ist das eigentlich egal
+<option>827
+
+250
+<t>Die TQLs haben uns gesehen und erwischen uns
+<minus7leben>
+
+915
+<t>"Eigentlich dürften wir euch nicht vorbeilassen
+Aber wie wäre es mit einer Partie Reversi?"
+Hmm... Okay
+...
+...
+Die Zeit vergeht aber schnell
+Los, gehen wir weiter
+<statchange>Zeit<w>-2
+<option>827
+
+252
+<t>Die RQKs gehen zu den TQLs und spielen mit ihnen eine Partie Reversi
+Währenddessen können wir uns leicht unbemerkt vorbeischleichen
+<option>827
+
+153
+<t>Wir geben den RQKs das zweite Gerät
+Sie schließen es an
+...
+"Es funktioniert!
+Hier habt ihr euer Gerät wieder"
+<itemget>Orangefarbener Stein<category>Stein
+<t>???
+"Oh, das war nicht das Gerät"
+<giveget>
+"Den Stein könnt ihr behalten, den haben wir nur zum Testen gebraucht
+Oh, danke
+"So, jetzt helfen wir euch aber an den TQLs vorbei"
+<option>252
+
+423
+<circget>1.UG betreten
+<t>Wir sind im 1. Untergeschoss
+Aus Zeitgründen sollten wir jedes Stockwerk maximal einmal betreten
+Wohin fahren wir?
+<ifcirc>2.OG betreten<else>
+<option>703<t>2.OG - Dach<end>
+<ifcirc>1.OG betreten<else>
+<option>3a9<t>1.OG - (Kann man nicht lesen)<end>
+<ifcirc>EG betreten<else>
+<option>883<t>EG - Eingangstunnel<end>
+<ifcirc>1.UG betreten<else>
+<option>787<t>1.UG - Mine<end>
+<ifcirc>2.UG betreten<else>
+<option>444<t>2.UG - Geheim
+
+827
+<ifcirc>EG betreten
+<option>82a
+<else>
+<option>8a7
+
+8a7
+<ifcirc>Lift funktioniert nicht
+<option>a27
+<else>
+<t>Wir gehen den vielgenutzten Weg entlang
+Dieser Weg führt endlich zum Gipfel
+...
+Jetzt sind wir oben
+Allerdings ist hier irgendwie nichts
+Nur ein großer Platz und am Rand davon ein Gebäude mit Flachdach
+<option>931<t>Schauen wir uns den Platz an
+<option>826<t>Schauen wir uns das Gebäude an
+
+826
+<t>Hmm... es ist leer...
+Niemand drinnen
+Die Tür ist anscheinend offen
+Eine Metallleiter auf der Seite führt aufs Dach
+Oben auf dem Dach ist ein Lift
+<ifcirc>Gebäude angesehen<else>
+<option>228<t>Gehen wir rein
+<end>
+<option>457<t>Klettern wir rauf zum Lift
+
+703
+<circget>2.OG betreten
+<t>Wir fahren ins 2. Obergeschoss
+Hier oben kommen wir auf einem Flachdach aus dem Lift
+Das Dach gehört zu einem Gebäude das auf dem Berg steht
+Auf der Seite vom Gebäude ist eine Metallleiter zum runterklettern
+Sonst ist da oben nur ein großer leerer Platz
+<option>931<t>Schauen wir uns den Platz an
+<ifcirc>Gebäude angesehen<else>
+<option>228<t>Gehen wir in das Gebäude (Das ist anscheinend auch leer)
+<end>
+<option>937<t>Zurück in den Lift
+
+457
+<t>Wir klettern an der Metallleiter rauf zum Lift
+Außer dem Lift ist hier oben nur eine Antenne
+Ab in den Lift, hier finden wir sonst nichts
+<option>937
+
+937
+<circget>2.OG betreten
+<t>Wir sind im 2. Obergeschoss
+Aus Zeitgründen sollten wir jedes Stockwerk maximal einmal betreten
+Wohin fahren wir?
+<ifcirc>2.OG betreten<else>
+<option>703<t>2.OG - Dach<end>
+<ifcirc>1.OG betreten<else>
+<option>3a9<t>1.OG - (Kann man nicht lesen)<end>
+<ifcirc>EG betreten<else>
+<option>883<t>EG - Eingangstunnel<end>
+<ifcirc>1.UG betreten<else>
+<option>787<t>1.UG - Mine<end>
+<ifcirc>2.UG betreten<else>
+<option>444<t>2.UG - Geheim
+
+787
+<t>Wir fahren ins 1. Untergeschoss
+Hier ist ein Raum mit einem RQK
+Dahinter ist eine kleine Mine
+Außerdem sind da noch ein Notausgang und ein steil aufwärts gehender Weg
+Der Notausgang geht sich zeitlich nicht aus
+<option>132<t>Gehen wir den Weg rauf
+<option>143<t>Reden wir mit dem RQK
+<option>423<t>Zurück in den Lift
+
+132
+<t>Der Weg führt spiralförmig nach oben
+Der ist recht lang
+Da kommen TQLs
+Ojeh
+<minus7leben>
+
+883
+<circget>EG betreten
+<t>Wir fahren ins Erdgeschoss
+Hier ist ein kurzer Tunnel
+Rechts ist eine Tür
+Die ist allerdings fest verschlossen
+Vielleicht elektronisch verriegelt?
+Das Ende vom Tunnel ist dicht zugewachsen
+Wie eine getarnte Tür
+<ifcirc>2.OG betreten
+<option>620
+<else>
+<option>871
+
+871
+<t>Wir gehen aus dem Tunnel
+Hinter kann man den Eingang gar nicht mehr sehen
+Vor uns ist ein vielgenutzter Weg
+<option>8a7
+
+620
+<t>Wir gehen aus dem Tunnel
+Hinter kann man den Eingang gar nicht mehr sehen
+Vor uns ist ein vielgenutzter Weg, der zum Gipfel führt
+Dort oben sind das Gebäude mit dem Lift am Dach und ein großer leerer Platz
+<option>931<t>Schauen wir uns den leeren Platz an
+<ifcirc>Gebäude angesehen<else>
+<option>228<t>Gehen wir ins Gebäude (Das ist auch leer)
+
+228
+<circget>Gebäude angesehen
+<t>Nichts...
+<ifcirc>[A] gesehen
+<t>"Hey"
+???
+"Ich bins, [A]
+Ich will euch dabei helfen, [Z] zu besiegen"
+Ah
+Na dann...
+<circget>[A] gefunden
+<else>
+<t>Wirklich nichts
+Gehen wir wieder raus
+<end>
+<ifcirc>2.OG betreten<else>
+<option>937<t>Zum Lift auf dem Dach
+<end>
+<option>931<t>Schauen wir uns den leeren Platz an
+
+444
+<circget>2.UG betreten
+<t>Wir fahren ins 2. Untergeschoss
+Hier ist eine Tür und daneben ist ein recht langer Tunnel
+<option>20a<t>Zur Tür
+<option>71a<t>Durch den Tunnel
+<option>a23<t>Zurück in den Lift
+
+a23
+<circget>2.UG betreten
+<t>Wir sind im 2. Untergeschoss
+Aus Zeitgründen sollten wir jedes Stockwerk maximal einmal betreten
+Wohin fahren wir?
+<ifcirc>2.OG betreten<else>
+<option>703<t>2.OG - Dach<end>
+<ifcirc>1.OG betreten<else>
+<option>3a9<t>1.OG - (Kann man nicht lesen)<end>
+<ifcirc>EG betreten<else>
+<option>883<t>EG - Eingangstunnel<end>
+<ifcirc>1.UG betreten<else>
+<option>787<t>1.UG - Mine<end>
+<ifcirc>2.UG betreten<else>
+<option>444<t>2.UG - Geheim
+
+20a
+<t>Diese Tür ist verschlossen und braucht einen passenden Schlüssel
+<ifitem>Schlüssel
+<option>87a
+<else>
+<option>77a
+
+77a
+<t>Dann müssen wir wohl einen anderen Weg nehmen
+<option>71a<t>Tunnel
+<option>a23<t>Zurück in den Lift
+
+71a
+<t>Wir gehen durch den Tunnel
+Da kommt noch ein anderer Lift
+Wir gehen rein und fahren damit rauf
+"[Z] hat angerufen und gesagt, dass sie hier gleich auftauchen müssten"
+Die Tür geht auf und vor uns stehen einige TQLs
+<minus7leben>
+
+87a
+<t>Wir öffnen die Tür
+Hier ist die "Maschine 2"
+Der RQK hat gesagt, dass wir sie mit 4 farbigen Steinen starten könnten
+Ich glaube, hier kann man die Steine reinstecken
+Hier drüben sind drei Lampen, die gerade nicht leuchten
+<option>99a<giveitem>Stein<giveitem>Stein<giveitem>Stein<giveitem>Stein
+<t>4 Steine reinstecken
+<option>98a<giveitem>Stein<giveitem>Stein<giveitem>Stein
+<t>3 Steine reinstecken
+<option>97a<giveitem>Stein<giveitem>Stein
+<t>2 Steine reinstecken
+<option>96a<giveitem>Stein
+<t>1 Stein reinstecken
+<option>77a<t>Nicht genug Steine
+
+96a
+<t>Da tut sich nichts...
+Nehmen wir den Stein wieder mit
+<giveget>
+<option>77a
+
+97a
+<t>Die Maschine startet
+Von den drei Lampen leuchtet eine grün, zwei leuchten rot
+Mehr passiert allerdings nicht
+<giveclear>
+<option>71a<t>In den Tunnel
+<option>a23<t>Zurück in den Lift
+
+98a
+<t>Die Maschine startet
+Von den drei Lampen leuchten zwei grün, eine leuchtet rot
+Passt, zurück in den Lift
+...
+Der funktioniert nicht
+Dann müssen wir wohl durch den Tunnel
+Am Ende vom Tunnel kommt noch ein anderer Lift
+Der funktioniert allerdings noch
+Wir gehen rein und fahren damit rauf
+"[Z] hat angerufen und gesagt, dass sie hier gleich auftauchen müssten
+Wir hatten ziemliche Probleme mit der Verbindung, ich hätte fast nichts verstanden"
+Die Tür geht auf und vor uns stehen einige TQLs
+<minus7leben>
+
+99a
+<t>Die Maschine startet
+Alle drei Lampen leuchten grün
+Passt, zurück in den Lift
+...
+Der funktioniert nicht
+Dann müssen wir wohl durch den Tunnel
+Am Ende vom Tunnel kommt noch ein anderer Lift
+Der funktioniert allerdings noch
+Wir gehen rein und fahren damit rauf
+"[Z] hat angerufen
+Wir hatten ziemliche Probleme mit der Verbindung
+Ich habe so gut wie nichts verstanden"
+Die Tür geht auf
+Wir kommen vor dem Haupttunnelausgang aus dem Lift
+Von hier ist der Lift ziemlich gut getarnt und man kann ihn kaum erkennen
+Einige TQLs stehen neben dem Haupttunnelausgang und versuchen zu telefonieren
+Zum Glück bemerken sie uns nicht
+<circget>Lift funktioniert nicht
+<option>912
+
+82a
+<t>Hier sind wir vorhin aus dem getarnten Eingangstunnel rausgekommen
+<option>62a<t>Gehen wir rein
+<option>8a7<t>Gehen wir weiter rauf
+
+a27
+<t>Wir gehen den vielgenutzten Weg entlang
+Dieser Weg führt endlich zum Gipfel
+...
+Jetzt sind wir oben
+Allerdings ist hier irgendwie nichts
+Nur ein großer Platz und am Rand davon ein Gebäude mit Flachdach
+Der Platz ist komplett leer
+Das Gebäude ist auch komplett leer
+Wir klettern an einer Metallleiter auf der Seite vom Gebäude hoch
+Der Lift funktioniert auch nicht
+Einige TQLs reparieren den Lift
+"Wir sind gerade daran, den Lift zu reparieren"
+"Flucht ist zwecklos"
+<minus7leben>
+
+62a
+<ifcirc>Lift funktioniert nicht
+<option>61a
+<else>
+<option>63a<t>Die Tür ist immer noch zu, gehen wir in den Lift
+
+63a
+<circget>EG betreten
+<t>Wir sind im Erdgeschoss
+Aus Zeitgründen sollten wir jedes Stockwerk maximal einmal betreten
+Wohin fahren wir?
+<ifcirc>2.OG betreten<else>
+<option>703<t>2.OG - Dach<end>
+<ifcirc>1.OG betreten<else>
+<option>3a9<t>1.OG - (Kann man nicht lesen)<end>
+<ifcirc>EG betreten<else>
+<option>883<t>EG - Eingangstunnel<end>
+<ifcirc>1.UG betreten<else>
+<option>787<t>1.UG - Mine<end>
+<ifcirc>2.UG betreten<else>
+<option>444<t>2.UG - Geheim
+
+3a9
+<t>Wir sind im 1. Obergeschoss
+Hier ist es ziemlich finster, keine Ahnung wo wir genau sind
+...
+Was ist denn das große Ding hier?
+Vermutlich die böse Maschine von [Z]
+Die müssen wir zerstören!
+Auf einmal hebt sich der Boden unter der Maschine an und die Decke öffnet sich
+"Na wen haben wir denn da?
+Diesmal werdet ihr beiden mich nicht aufhalten können!
+Runter mit euch von der Plattform"
+[Z] stößt uns von der Plattform runter und fährt mit der Maschine weiter nach oben
+<ifcirc>[A] gefunden
+<option>40a
+<else>
+<option>41a
+
+40a
+<circget>Sabotage
+<t>"Ihr beiden"? War [A] nicht bei uns dabei?
+[A] winkt aus der Maschine
+Anscheinend hat [Z] [A] noch nicht bemerkt
+Nicht schlecht, [A]
+<option>41a
+
+41a
+<t>Der Boden mit der Maschine darauf hebt sich immer weiter an
+Jetzt stoppt er und füllt das Loch in der Decke komplett aus
+Es ist jetzt fast stockfinster hier
+Wir müssen schnell hier raus und [Z] aufhalten
+Wo ist der Lift?
+<ifitem>Taschenlampe
+<option>42a
+<else>
+<option>43a
+
+42a
+<t>Licht an!
+Jetzt schnell zum Lift
+Obwohl, warte, hier ist noch etwas
+<itemget>Rüstung<category>Nicht Stein
+<t>Cool
+Aber jetzt ab in den Lift
+<option>44a
+
+43a
+<t>Schnell zum Lift zurück
+Ich glaube der war hier
+Okay, hier ist er
+Mit welcher Taste geht hier die Tür auf?
+Ah, hier
+<statchange>Zeit<w>-1
+<option>44a
+
+61a
+<t>Der Lift funktioniert nicht mehr
+Allerdings ist die Tür jetzt nicht mehr verriegelt
+Gehen wir rein
+Hier ist eine Treppe
+Warte kurz
+Ich glaube, [Z] ist hier oben
+Und die böse Maschine!
+"Die 'Maschine 2' wird mich nicht aufhalten können!
+Oben auf dem Gipfel wirkt sie nicht mehr
+Ich muss meine Maschine nur noch mit diesem hydraulischen Boden nach oben befördern"
+[Z] legt einen Hebel um
+Der Boden unter der Maschine hebt sich langsam an
+Stop!
+Wir schnappen uns den Hebel und ziehen daran
+"Was? Ihr beiden schon wieder? Euch werd ichs zeigen!"
+Wir schaffen es irgendwie nicht, den Hebel zu uns zu ziehen
+<option>a60<giveitem>Werfbar
+<t>Vielleicht können wir [Z] mit irgendwas bewerfen
+Dann lässt [Z] vielleicht los
+<option>a61<t>Nichts werfen
+
+a61
+<t>Die Maschine fährt weiter hinauf
+Und weiter
+Jetzt ist sie aktiviert...
+Oh nein
+<minus7leben>
+
+a60
+<t>[Z] hat kurz losgelassen
+<option>a62<giveitem>Werfbar<t>Werfen wir schnell noch etwas!
+<option>a61<t>Nichts mehr übrig
+
+a62
+<t>[Z] lässt noch einmal kurz los
+Das ist unsere Chance!
+Wir ziehen am Hebel und der Boden mit der Maschine senkt sich wieder
+Die Maschine kann jetzt nichts mehr tun
+[Z] ist dadurch besiegt
+Wir haben es geschafft!
+<finish>
+
+44a
+<t>Wir sind zurück im Lift
+[Z] hat sicher schon die TQLs über uns informiert
+Die werden versuchen, alle Ausgänge zu blockieren
+Wir müssen aufpassen, wo wir hinfahren
+<option>45a<t>2.OG - Dach
+<option>46a<t>EG - Eingangstunnel
+<option>47a<t>1.UG - Mine
+<option>48a<t>2.UG - Geheim
+
+45a
+<t>Wir fahren ins 2. Obergeschoss
+"Ah, wie erwartet"
+[Z] und ein paar TQLs stehen vor dem Lift
+Da haben wir keine Chance
+<minus7leben>
+
+46a
+<t>Wir fahren ins Erdgeschoss
+Wir kommen in einen kurzen Tunnel
+Rechts ist eine verschlossene Tür, aber dafür haben wir jetzt keine Zeit
+Das Ende vom Tunnel ist dicht zugewachsen, von außen sieht man es fast gar nicht
+Gehen wir schnell diesen Weg nach oben
+Wir sind jetzt auf dem Gipfel
+Hier ist die Maschine
+Daneben steht [Z]
+<option>9a3
+
+47a
+<t>Wir fahren ins 1. Untergeschoss
+"Nicht die Tür aufmachen
+Sonst schnappen euch die TQLs
+Fahrt außerdem nicht in den..."
+Den was?
+Okay, dann fahren wir wohl besser schnell woandershin
+Wohin jetzt
+<option>45a<t>2.OG - Dach
+<option>46a<t>EG - Eingangstunnel
+<option>48a<t>2.UG - Geheim
+
+48a
+<t>Wir fahren ins 2. Untergeschoss
+Wir steigen aus
+Der Lift fährt davon
+Hmm
+Der Lift kommt zurück und ein paar TQLs steigen aus
+Aus dem Tunnel gegenüber kommen auch welche
+Ohje
+<minus7leben>
+
+931
+<t>Hier ist nichts
+Oder?
+Ich höre da etwas
+Der Boden geht auf
+Jetzt wird eine Ebene von unten hydraulisch angehoben
+Auf der Ebene steht die böse Maschine von [Z]
+Daneben steht [Z]
+<option>9a3
+
+9a3
+<t>"Hier oben hat die 'Maschine 2' keine Wirkung auf meine Maschine"
+Äh, wir haben allerdings eine Wirkung...
+"Ach ja? Mit dieser Maschine werde ich euch zerstören"
+[Z] klettert in die Maschine
+<ifcirc>Sabotage
+<option>9a4
+<else>
+<option>9a5
+
+9a4
+<t>"He, raus da!"
+[A] fällt aus der Maschine und landet vor uns
+"Aua"
+"Niemand außer mir steuert meine Maschine!
+Ich werde euch allen alle eure 7 Leben abziehen!"
+Jaja, [Z]
+Jetzt zu dir, [A]
+Was hast du da drinnen gemacht?
+"Ich habe versucht, die böse Maschine so gut es geht zu sabotieren
+Sie sollte jetzt etwas leichter zu zerstören sein"
+<statcreate>Endgegner-Leben<w>10
+<option>9a6
+
+9a5
+<t>"Mit meiner unzerstörbaren Maschine werde ich euch alle eure 7 Leben abziehen!"
+Unzerstörbar?
+Naja, mal sehen
+<statcreate>Endgegner-Leben<w>15
+<option>9a6
+
+9a6
+<t>Wie könnten wir die böse Maschine zerstören?
+<option>a70<giveitem>Stein<t>Mit einem Stein bewerfen
+<option>a71<giveitem>Werfbar<t>Mit etwas anderem bewerfen
+<option>a72<giveitem>Floß<t>Mit einem Floß angreifen
+<option>a73<giveitem>Leiter<t>Mit einer Leiter angreifen
+<option>a74<t>Sterni-Wurf
+
+a70
+<giveclear>
+<t>Der Stein trifft die Maschine und verursacht 3 Schaden
+<statchange>Endgegner-Leben<w>-3
+<option>5a6
+
+a71
+<giveclear>
+<t>"Ihr werft so etwas?
+Damit habt ihr doch keine Chance gegen meine Maschine"
+Das stimmt zwar, aber jetzt ist [Z] abgelenkt
+Zeit für einen schnellen Sterni-Wurf!
+<statchange>Endgegner-Leben<w>-2
+<option>5a6
+
+a72
+<giveclear>
+<t>Wir hauen die Maschine mit einem Floß
+Das verursacht 3 Schaden, allerdings geht das Floß kaputt
+<statchange>Endgegner-Leben<w>-3
+<option>5a6
+
+a73
+<giveclear>
+<t>Wir hauen die Maschine mit einer Leiter
+Das verursacht 4 Schaden, allerdings geht die Leiter kaputt
+<statchange>Endgegner-Leben<w>-4
+<option>5a6
+
+a74
+<giveclear>
+<t>"Haha, das habe ich bereits kommen sehen"
+[Z] blockt unseren Angriff
+Der Sterni-Wurf verursacht allerdings immer noch 1 Schaden
+<statchange>Endgegner-Leben<w>-1
+<option>5a6
+
+5a6
+<ifstat>Endgegner-Leben<w>1
+<option>5a7
+<else>
+<option>5a8
+
+5a7
+<t>Die Maschine greift uns an
+<ifitem>Rüstung
+<t>Die Rüstung blockt den Angriff teilweise
+<statchange>Leben<w>-2
+<else>
+<statchange>Leben<w>-3
+<end>
+<option>9a6
+
+5a8
+<t>Die Maschine greift uns an
+Oder, versucht es zumindest
+Dann tut sie gar nichts mehr
+Wir haben [Z] besiegt
+Wir haben es geschafft!
+<finish>
